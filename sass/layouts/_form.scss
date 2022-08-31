@@ -1,0 +1,122 @@
+.form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.form-input:focus {
+    border-color: var(--accent-color);
+}
+
+.form-input:focus+.input-icon {
+    fill: var(--accent-color);
+}
+
+
+
+.input-text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    display: block;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.input-comment {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    resize: none;
+    cursor: pointer;
+    outline: none;
+    display: block;
+}
+
+.input-comment:focus {
+    border-color: var(--accent-color);
+}
+
+.input-field {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+
+}
+
+.user-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 7px;
+    font-size: 14px;
+    line-height: 1.71;
+    cursor: pointer;
+
+}
+
+
+.user-link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: #2196F3;
+    position: relative;
+}
+
+.user-link::after {
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--accent-color);
+
+}
+
+.user-text span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: background-color, border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-icon {
+    fill: transparent;
+}
+
+.input-check:checked+.user-text span {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.input-check:checked+.user-text .check-icon {
+    fill: var(--white-color);
+}
+
+.input-check:focus+.user-text span {
+    border-color: var(--accent-color);
+}

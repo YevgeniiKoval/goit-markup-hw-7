@@ -1,0 +1,32 @@
+.work {
+    padding-bottom: 94px;
+}
+
+.work .item {
+    width: 370px;
+}
+
+.work .container .list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.work-container {
+    position: relative;
+}
+
+.work-text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    padding: 28px;
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+
+}
