@@ -1,10 +1,12 @@
-@import './utils/vars';
+@import './utils/placeholders';
+@import './utils/variables';
 @import './base/reset';
 @import './base/common.scss';
 @import './utils/hidden';
 @import './components/container';
 @import './components/btns';
 @import './components/title';
+
 
 @import './layouts/header';
 @import './layouts/hero';

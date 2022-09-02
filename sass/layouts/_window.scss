@@ -17,7 +17,7 @@
 
 .modal {
     position: absolute;
-    background-color: var(--white-color);
+    background-color: $white-color;
     top: 50%;
     left: 50%;
     min-height: 581px;
@@ -27,15 +27,15 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms linear;
     padding: 40px;
+    &-icon {
+        @include flex;
+    
+    }
+    .backdrop.is-hidden & {
+        transform: translate(50%, 50%) scale(0);
+    }
 
 }
 
-.backdrop.is-hidden .modal {
-    transform: translate(50%, 50%) scale(0);
-}
 
-.modal-icon {
-    display: flex;
-    align-items: center;
 
-}

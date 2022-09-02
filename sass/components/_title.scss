@@ -1,8 +1,8 @@
-.team .title,
+.team__title,
 .blosc .title,
-.work .title,
-.clients .title {
-    color: var(--title-text-color);
+.work__title,
+.clients__title {
+    color: $title-text-color;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -10,8 +10,8 @@
     margin-bottom: 50px;
 }
 
-.feature .title {
-    color: var(--title-text-color);
+.feature__title {
+    color: $title-text-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -20,7 +20,7 @@
 }
 
 .footer-icon-title {
-    color: var(--white-color);
+    color: $white-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -41,12 +41,12 @@
 .footer-form-title {
     font-size: 14px;
     text-transform: uppercase;
-    color: var(--white-color);
+    color: $white-color;
     margin-bottom: 10px;
 }
 
-.primary .title {
-    color: var(--white-color);
+.primary__title {
+    color: $white-color;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -58,7 +58,7 @@
 }
 
 .blosc-title {
-    color: var(--title-text-color);
+    color: $title-text-color;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;

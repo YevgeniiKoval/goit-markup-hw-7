@@ -10,11 +10,11 @@
 }
 
 .form-input:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
 }
 
 .form-input:focus+.input-icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 
 
@@ -45,7 +45,7 @@
 }
 
 .input-comment:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
 }
 
 .input-field {
@@ -61,8 +61,7 @@
 }
 
 .user-text {
-    display: flex;
-    align-items: center;
+    @include flex;
     justify-content: center;
     margin-top: 20px;
     gap: 7px;
@@ -87,7 +86,7 @@
     right: 0;
     width: 100%;
     height: 1px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
 
 }
 
@@ -96,8 +95,7 @@
     height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
-    display: flex;
-    align-items: center;
+    @include flex;
     justify-content: center;
     transition-property: background-color, border-color, fill;
     transition-duration: 250ms;
@@ -109,14 +107,14 @@
 }
 
 .input-check:checked+.user-text span {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
+    background-color: $accent-color;
+    border-color: $accent-color;
 }
 
 .input-check:checked+.user-text .check-icon {
-    fill: var(--white-color);
+    fill: $white-color;
 }
 
 .input-check:focus+.user-text span {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
 }

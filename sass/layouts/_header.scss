@@ -1,52 +1,54 @@
+.bonner {
+    border-bottom: 1px solid #ECECEC;
+    &-list {
+        @include flex;
+        margin-left: auto;
+        column-gap: 50px;
+        }
+    & .link {
+        color: $title-text-color;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        }
+    &-icon {
+        fill: currentColor;
+        margin-right: 10px;
+        }
+}
+
+
 .bonner .container,
 .bonner-nav,
 .bonner-nav .list {
-    display: flex;
-    align-items: center;
+    @include flex;
 }
 
-.bonner-list {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    column-gap: 50px;
-}
-
-.bonner {
-    border-bottom: 1px solid #ECECEC;
-}
-
-.logo-link {
+.logo {
+    color: $accent-color;
+    font-family: $secondary-font, $default-font-raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+&-link {
     color: #000000;
-    font-family: Raleway, cursive;
+    font-family: $secondary-font, $default-font-raleway;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     margin-right: 93px;
+        }
 }
 
-.logo {
-    color: var(--accent-color);
-    font-family: Raleway, cursive;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-}
 
-.bonner-nav .link {
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
 
 .link.current {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .current {
-    color: var(--accent-color);
+    color: $accent-color;
     padding-left: 2px;
     padding-right: 2px;
     position: relative;
@@ -56,7 +58,7 @@
     content: "";
     width: 100%;
     height: 4px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     border-radius: 2px;
     position: absolute;
     bottom: -1px;
@@ -78,29 +80,24 @@
 
 .gap-link:hover,
 .gap-link:focus {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .bonner-link {
-    color: var(--primary-text-color);
+    color: $primary-text-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    display: flex;
-    align-items: center;
+    @include flex;
 
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        }
 }
 
-.bonner-link:hover,
-.bonner-link:focus {
-    color: var(--accent-color);
-}
 
-.bonner-icon {
-    fill: currentColor;
-    margin-right: 10px;
-}
